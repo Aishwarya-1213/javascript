@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>find even and odd numbers</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+            body
+            {
+                margin-top: 100px;
+                margin-left: 400px;
+                width: 400px;
+                color:rgb(180, 9, 180);
+                background-image: url(./numb.jpg);
+            
+            }
+            #div1
+            {
+                padding: 20px;
+                border: 2px;
+                
+            }
+            #evennumbers ,#oddnumbers{
+                color: aqua;
+                background-color: rgb(111, 4, 211);
+            }
+            h2
+            {
+                color: rgb(248, 248, 248);
+                font-size: xx-large;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            div
+            {
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container border" id="div1">
+            <h2>Even and Odd Numbers</h2>
+            <div>
+                <label> Enter upper limit</label>
+                <input type="num" id="upper" name="number">
+            </div>
+            <br>
+            <div>
+                <label> Enter lower limit</label>
+                <input type="num" id="lower" name="number">
+            </div>
+            <br>
+            <div>
+                <button type="button" class="btn btn-primary" onclick="oddnumbers()">OddNumbers</button>
+       
+            </div>
+            <br>
+            <div>
+                <button type="button" class="btn btn-secondary" onclick="evennumbers()">EvenNumbers</button>
+            </div>
+            <br>
+            <div>
+                <label>Result:</label>
+                <!-- <input type="text" id="result"> -->
+                <textarea class="form-control" rows="5" id="Result"></textarea>
+            </div>
+            
+
+        </div>
+        <script src="./forevenodd.js"></script>
+    </body>
+</html>
